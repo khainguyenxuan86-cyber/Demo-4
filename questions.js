@@ -4,7 +4,7 @@ const questions = [
     id: "mcq1",
     type: "multipleChoice",
     question: "What is this?",
-    image: "images/Comic.png",
+    image: "images/comic.png",
     choices: ["Bat", "Laptop", "Comic", "Shower"],
     answer: "Comic"
   },
