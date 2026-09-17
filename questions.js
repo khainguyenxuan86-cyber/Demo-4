@@ -33,7 +33,7 @@ const questions = [
     question: "What is this?",
     image: "images/toothpaste.png",
     choices: ["Toothbrush", "Toothpaste", "Blanket", "Map of the World"],
-    answer: "Toothbrush"
+    answer: "Toothpaste"
   },
     
     {
