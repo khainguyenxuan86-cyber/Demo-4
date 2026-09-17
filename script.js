@@ -637,24 +637,31 @@ function showResults() {
   finalTotal.textContent = questions.length;
   finalStars.innerHTML = getStarDisplay(stars);
 
+  // Only show breakdown cards for question types included in questions.js.
+  const questionTypes = Object.keys(stats).filter(type =>
+    questions.some(question => question.type === type)
+  );
+
   resultBreakdown.innerHTML = `
     <h3>🏆 Performance breakdown</h3>
 
     <div class="breakdown-grid">
-      <div class="breakdown-card">
-        <span>Multiple Choice</span>
-        <strong>${stats.multipleChoice.correct} / ${stats.multipleChoice.total}</strong>
-      </div>
+      ${questionTypes
+        .map(type => {
+          const label = {
+            multipleChoice: "Multiple Choice",
+            unscramble: "Unscramble",
+            writing: "Writing"
+          }[type];
 
-      <div class="breakdown-card">
-        <span>Unscramble</span>
-        <strong>${stats.unscramble.correct} / ${stats.unscramble.total}</strong>
-      </div>
-
-      <div class="breakdown-card">
-        <span>Writing</span>
-        <strong>${stats.writing.correct} / ${stats.writing.total}</strong>
-      </div>
+          return `
+            <div class="breakdown-card">
+              <span>${label}</span>
+              <strong>${stats[type].correct} / ${stats[type].total}</strong>
+            </div>
+          `;
+        })
+        .join("")}
     </div>
   `;
 }
