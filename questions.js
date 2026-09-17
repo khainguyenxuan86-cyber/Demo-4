@@ -1,8 +1,59 @@
 const questions = [
   // =========================
-  // UNSCRAMBLE
-  // =========================
+    {
+    id: "mcq1",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/Comic.png",
+    choices: ["Bat", "Laptop", "Comic", "Shower"],
+    answer: "Comic"
+  },
 
+    {
+    id: "mcq2",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/towel.png",
+    choices: ["Towel", "Helmet", "Toothbrush", "Map of the World"],
+    answer: "Towel"
+  },
+  
+    {
+    id: "mcq3",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/toothbrush.png",
+    choices: ["Toothbrush", "Toothpaste", "Cage", "Plant"],
+    answer: "Toothbrush"
+  },
+    
+    {
+    id: "mcq4",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/toothpaste.png",
+    choices: ["Toothbrush", "Toothpaste", "Blanket", "Map of the World"],
+    answer: "Toothbrush"
+  },
+    
+    {
+    id: "mcq5",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/helmet.png",
+    choices: ["Helmet", "Comic", "Cage", "Towel"],
+    answer: "Helmet"
+  },
+    
+    {
+    id: "mcq6",
+    type: "multipleChoice",
+    question: "What is this?",
+    image: "images/cage.png",
+    choices: ["Cage", "Shower", "Towel", "Plant"],
+    answer: "Cage"
+  },
+  
     {
     id: "unscramble1",
     type: "unscramble",
@@ -64,5 +115,32 @@ const questions = [
     image: "images/7.png",
     words: ["There", "is", "a", "blue", "blanket", "on", "the", "bed."],
     answer: ["There", "is", "a", "blue", "blanket", "on", "the", "bed."]
+  },
+  
+      {
+    id: "unscramble8",
+    type: "unscramble",
+    question: "Put the words in the correct order.",
+    image: "images/8.png",
+    words: ["There", "isn't", "a", "TV", "in", "the", "living", "room."],
+    answer: ["There", "isn't", "a", "TV", "in", "the", "living", "room."]
+  },
+  
+      {
+    id: "unscramble9",
+    type: "unscramble",
+    question: "Put the words in the correct order.",
+    image: "images/9.png",
+    words: ["There", "aren't", "any", "plants", "in", "the", "dining", "room."],
+    answer: ["There", "aren't", "any", "plants", "in", "the", "dining", "room."]
+  },
+    
+      {
+    id: "unscramble10",
+    type: "unscramble",
+    question: "Put the words in the correct order.",
+    image: "images/10.png",
+    words: ["There", "is", "a", "comic", "on", "the", "table."],
+    answer: ["There", "is", "a", "comic", "on", "the", "table."]
   },
 ];
